@@ -1,0 +1,30 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /root   
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+      url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Seoul
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: test
+      password: springbootTest
+      hikari:
+        maximum-pool-size: 30
+ 
+  
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  
+    
